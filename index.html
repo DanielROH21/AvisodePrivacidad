@@ -4,7 +4,7 @@
   <title>Obten Dirección</title>
   <script>
     if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{enableHighAccuracy:true});
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback,{enableHighAccuracy:true,maximumAge: 0});
 } else {
   console.log("Geolocalización no es compatible en este navegador");
 }
